@@ -1,6 +1,5 @@
 import string
 import xlrd
-import cursor
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 
@@ -109,9 +108,7 @@ while choice is not '0':
     print("3] Swap cells")
     print("4] Replace string")
     print("0] Exit")
-    cursor.show()
     choice = str(input())
-    cursor.hide()
 
     if choice == '1':
         print_data(all_data)
